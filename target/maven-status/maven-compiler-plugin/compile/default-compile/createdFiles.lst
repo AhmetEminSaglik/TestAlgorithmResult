@@ -1,0 +1,7 @@
+org\ahmeteminsaglik\entity\ComplexityConsept.class
+org\ahmeteminsaglik\GetResultService.class
+org\ahmeteminsaglik\entity\ResultEntity.class
+org\ahmeteminsaglik\AlgorithmTestResult.class
+org\ahmeteminsaglik\entity\WordProcessConsept.class
+org\ahmeteminsaglik\SetResultService.class
+org\ahmeteminsaglik\factoryutility\ConseptFactory.class
