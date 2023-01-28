@@ -6,6 +6,14 @@ public class WordProcessUsedTable {
     private EnumWordTable enumTotalWordList;
     private EnumWordTable enumSearchWordList;
 
+    public WordProcessUsedTable() {
+    }
+
+    public WordProcessUsedTable(EnumWordTable enumTotalWordList, EnumWordTable enumSearchWordList) {
+        this.enumTotalWordList = enumTotalWordList;
+        this.enumSearchWordList = enumSearchWordList;
+    }
+
     public EnumWordTable getEnumTotalWordList() {
         return enumTotalWordList;
     }

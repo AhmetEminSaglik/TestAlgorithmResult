@@ -38,7 +38,7 @@ public class TestAlgorithmResult implements SetResultConseptService, GetResultCo
     @Override
     public TestAlgorithmResult setWordProcessUsedTable(WordProcessUsedTable usedTable) {
         wordProcessConsept.setUsedTable(usedTable);
-        return null;
+        return this;
     }
 
     @Override

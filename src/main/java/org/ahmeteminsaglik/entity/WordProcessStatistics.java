@@ -4,6 +4,14 @@ public class WordProcessStatistics {
     private int foundWord;
     private int missingWord;
 
+    public WordProcessStatistics() {
+    }
+
+    public WordProcessStatistics(int foundWord, int missingWord) {
+        this.foundWord = foundWord;
+        this.missingWord = missingWord;
+    }
+
     public int getFoundWord() {
         return foundWord;
     }
