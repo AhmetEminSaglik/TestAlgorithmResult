@@ -1,4 +1,4 @@
-package org.ahmeteminsaglik.abstracts.set;
+package org.ahmeteminsaglik.abstracts.set.algorithm;
 
 import org.ahmeteminsaglik.TestAlgorithmResult;
 import org.ahmeteminsaglik.enums.EnumDataStructor;

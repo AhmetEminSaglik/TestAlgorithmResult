@@ -1,4 +1,4 @@
-package org.ahmeteminsaglik.abstracts.get;
+package org.ahmeteminsaglik.abstracts.get.complexity;
 
 import org.ahmeteminsaglik.entity.ComplexityConsept;
 

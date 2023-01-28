@@ -4,14 +4,12 @@ import org.ahmeteminsaglik.enums.EnumDataStructor;
 import org.ahmeteminsaglik.enums.EnumSearchAlgorithm;
 import org.ahmeteminsaglik.enums.EnumSortAlgorithm;
 
-import java.util.List;
 
 public class ResultEntity {
     private EnumDataStructor enumDataStructor;
     private EnumSortAlgorithm enumSortAlgorithm;
     private EnumSearchAlgorithm enumSearchAlgorithm;
-    private WordProcessConsept wordProcessConsept;
-    //    private List<ComplexityConsept> complexityConseptList;
+    private WordProcessConsept wordProcessConsept= new WordProcessConsept();
     private ComplexityConsept complexitDataStructor;
     private ComplexityConsept complexitSortAlgorithm;
     private ComplexityConsept complexitSearchAlgorithm;

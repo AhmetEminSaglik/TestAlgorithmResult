@@ -1,4 +1,4 @@
-package org.ahmeteminsaglik.abstracts.set;
+package org.ahmeteminsaglik.abstracts.set.complexity;
 
 import org.ahmeteminsaglik.MemoryUsage;
 import org.ahmeteminsaglik.Stopwatch;

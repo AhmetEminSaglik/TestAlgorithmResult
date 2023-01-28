@@ -1,4 +1,4 @@
-package org.ahmeteminsaglik.abstracts.get;
+package org.ahmeteminsaglik.abstracts.get.algorithm;
 
 import org.ahmeteminsaglik.enums.EnumDataStructor;
 import org.ahmeteminsaglik.enums.EnumSearchAlgorithm;

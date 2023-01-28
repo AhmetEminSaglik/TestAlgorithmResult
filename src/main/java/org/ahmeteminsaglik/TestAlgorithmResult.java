@@ -1,16 +1,15 @@
 package org.ahmeteminsaglik;
 
-import org.ahmeteminsaglik.abstracts.get.api.GetResultService;
-import org.ahmeteminsaglik.abstracts.set.api.SetResultService;
-import org.ahmeteminsaglik.entity.ComplexityConsept;
-import org.ahmeteminsaglik.entity.ResultEntity;
-import org.ahmeteminsaglik.entity.WordProcessConsept;
+import org.ahmeteminsaglik.abstracts.get.api.GetResultConseptService;
+import org.ahmeteminsaglik.abstracts.set.api.SetResultConseptService;
+import org.ahmeteminsaglik.entity.*;
 import org.ahmeteminsaglik.enums.*;
 import org.ahmeteminsaglik.business.factory.ConseptFactory;
 
-public class TestAlgorithmResult implements SetResultService, GetResultService {
+public class TestAlgorithmResult implements SetResultConseptService, GetResultConseptService {
     private ResultEntity result = new ResultEntity();
     private ConseptFactory factory = new ConseptFactory();
+    private WordProcessConsept wordProcessConsept = result.getWordProcessConsept();
 
     @Override
     public TestAlgorithmResult setDataStructorProcess(EnumDataStructor enumDataStructor) {
@@ -31,10 +30,15 @@ public class TestAlgorithmResult implements SetResultService, GetResultService {
     }
 
     @Override
-    public TestAlgorithmResult setWordProcessConsept(EnumWordTable enumTotalWordList, EnumWordTable enumSearchWordList, int foundWord, int missingWord) {
-        WordProcessConsept consept = factory.buildWordProcessConsept(enumTotalWordList, enumSearchWordList, foundWord, missingWord);
-        result.setWordProcessConsept(consept);
+    public TestAlgorithmResult setWordProcessStatistic(WordProcessStatistics statistics) {
+        wordProcessConsept.setStatistics(statistics);
         return this;
+    }
+
+    @Override
+    public TestAlgorithmResult setWordProcessUsedTable(WordProcessUsedTable usedTable) {
+        wordProcessConsept.setUsedTable(usedTable);
+        return null;
     }
 
     @Override
@@ -77,11 +81,6 @@ public class TestAlgorithmResult implements SetResultService, GetResultService {
     }
 
     @Override
-    public WordProcessConsept getWordProcessConsept() {
-        return result.getWordProcessConsept();
-    }
-
-    @Override
     public ComplexityConsept getDataStructorComplexityConcept() {
         return result.getComplexitDataStructor();
     }
@@ -96,4 +95,18 @@ public class TestAlgorithmResult implements SetResultService, GetResultService {
         return result.getComplexitSearchAlgorithm();
     }
 
+    @Override
+    public WordProcessConsept getWordProcessConsept() {
+        return result.getWordProcessConsept();
+    }
+
+    @Override
+    public WordProcessStatistics getWordProcessStatistic() {
+        return wordProcessConsept.getStatistics();
+    }
+
+    @Override
+    public WordProcessUsedTable getWordProcessUsedTable() {
+        return wordProcessConsept.getUsedTable();
+    }
 }
