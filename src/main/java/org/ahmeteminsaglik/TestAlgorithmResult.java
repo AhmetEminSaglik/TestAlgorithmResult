@@ -1,42 +1,44 @@
 package org.ahmeteminsaglik;
 
+import org.ahmeteminsaglik.abstracts.get.api.GetResultService;
+import org.ahmeteminsaglik.abstracts.set.api.SetResultService;
 import org.ahmeteminsaglik.entity.ComplexityConsept;
 import org.ahmeteminsaglik.entity.ResultEntity;
 import org.ahmeteminsaglik.entity.WordProcessConsept;
 import org.ahmeteminsaglik.enums.*;
-import org.ahmeteminsaglik.factoryutility.ConseptFactory;
+import org.ahmeteminsaglik.business.factory.ConseptFactory;
 
-public class AlgorithmTestResult implements SetResultService, GetResultService {
+public class TestAlgorithmResult implements SetResultService, GetResultService {
     private ResultEntity result = new ResultEntity();
     private ConseptFactory factory = new ConseptFactory();
 
     @Override
-    public AlgorithmTestResult setDataStructorProcess(EnumDataStructor enumDataStructor) {
+    public TestAlgorithmResult setDataStructorProcess(EnumDataStructor enumDataStructor) {
         result.setEnumDataStructor(enumDataStructor);
         return this;
     }
 
     @Override
-    public AlgorithmTestResult setSortAlgorithmProcess(EnumSortAlgorithm enumSortAlgorithm) {
+    public TestAlgorithmResult setSortAlgorithmProcess(EnumSortAlgorithm enumSortAlgorithm) {
         result.setEnumSortAlgorithm(enumSortAlgorithm);
         return this;
     }
 
     @Override
-    public AlgorithmTestResult setSearchAlgorithmProcess(EnumSearchAlgorithm enumSearchAlgorithm) {
+    public TestAlgorithmResult setSearchAlgorithmProcess(EnumSearchAlgorithm enumSearchAlgorithm) {
         result.setEnumSearchAlgorithm(enumSearchAlgorithm);
         return this;
     }
 
     @Override
-    public AlgorithmTestResult setWordProcessConsept(EnumWordTable enumTotalWordList, EnumWordTable enumSearchWordList, int foundWord, int missingWord) {
+    public TestAlgorithmResult setWordProcessConsept(EnumWordTable enumTotalWordList, EnumWordTable enumSearchWordList, int foundWord, int missingWord) {
         WordProcessConsept consept = factory.buildWordProcessConsept(enumTotalWordList, enumSearchWordList, foundWord, missingWord);
         result.setWordProcessConsept(consept);
         return this;
     }
 
     @Override
-    public AlgorithmTestResult setComplexityConseptDataStructor(Stopwatch stopwatch, MemoryUsage memoryUsage) {
+    public TestAlgorithmResult setComplexityConseptDataStructor(Stopwatch stopwatch, MemoryUsage memoryUsage) {
         ComplexityConsept consept =
                 factory.buildComplexityConsept(EnumProcessName.DATA_STRUCTOR_PROCESS, stopwatch, memoryUsage);
         result.setComplexitDataStructor(consept);
@@ -44,7 +46,7 @@ public class AlgorithmTestResult implements SetResultService, GetResultService {
     }
 
     @Override
-    public AlgorithmTestResult setComplexityConseptSortAlgorithm(Stopwatch stopwatch, MemoryUsage memoryUsage) {
+    public TestAlgorithmResult setComplexityConseptSortAlgorithm(Stopwatch stopwatch, MemoryUsage memoryUsage) {
         ComplexityConsept complexityConsept =
                 factory.buildComplexityConsept(EnumProcessName.SORT_PROCESS, stopwatch, memoryUsage);
         result.setComplexitSortAlgorithm(complexityConsept);
@@ -52,7 +54,7 @@ public class AlgorithmTestResult implements SetResultService, GetResultService {
     }
 
     @Override
-    public AlgorithmTestResult setComplexityConseptSearchAlgorithm(Stopwatch stopwatch, MemoryUsage memoryUsage) {
+    public TestAlgorithmResult setComplexityConseptSearchAlgorithm(Stopwatch stopwatch, MemoryUsage memoryUsage) {
         ComplexityConsept complexityConsept =
                 factory.buildComplexityConsept(EnumProcessName.SEARCH_PROCESS, stopwatch, memoryUsage);
         result.setComplexitSearchAlgorithm(complexityConsept);

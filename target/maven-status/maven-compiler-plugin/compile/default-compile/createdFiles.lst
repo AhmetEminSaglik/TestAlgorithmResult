@@ -1,7 +1,13 @@
+org\ahmeteminsaglik\business\factory\ConseptFactory.class
 org\ahmeteminsaglik\entity\ComplexityConsept.class
-org\ahmeteminsaglik\GetResultService.class
 org\ahmeteminsaglik\entity\ResultEntity.class
-org\ahmeteminsaglik\AlgorithmTestResult.class
+org\ahmeteminsaglik\abstracts\get\api\GetResultService.class
+org\ahmeteminsaglik\abstracts\set\SetWordProcessService.class
+org\ahmeteminsaglik\abstracts\get\GetComplexityService.class
+org\ahmeteminsaglik\abstracts\set\SetUsedAlgorithmService.class
+org\ahmeteminsaglik\TestAlgorithmResult.class
+org\ahmeteminsaglik\abstracts\get\GetUsedAlgorithmService.class
+org\ahmeteminsaglik\abstracts\set\api\SetResultService.class
 org\ahmeteminsaglik\entity\WordProcessConsept.class
-org\ahmeteminsaglik\SetResultService.class
-org\ahmeteminsaglik\factoryutility\ConseptFactory.class
+org\ahmeteminsaglik\abstracts\set\SetAllComplexityService.class
+org\ahmeteminsaglik\abstracts\get\GetWordProcessService.class

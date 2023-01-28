@@ -1,4 +1,4 @@
-package org.ahmeteminsaglik.factoryutility;
+package org.ahmeteminsaglik.business.factory;
 
 import org.ahmeteminsaglik.MemoryUsage;
 import org.ahmeteminsaglik.Stopwatch;
