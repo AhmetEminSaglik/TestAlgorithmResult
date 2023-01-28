@@ -1,12 +1,12 @@
 package org.ahmeteminsaglik;
 
-import org.ahmeteminsaglik.abstracts.get.api.GetResultConseptService;
-import org.ahmeteminsaglik.abstracts.set.api.SetResultConseptService;
+import org.ahmeteminsaglik.abstracts.get.api.GetTestResultService;
+import org.ahmeteminsaglik.abstracts.set.api.SetTestResultService;
 import org.ahmeteminsaglik.entity.*;
 import org.ahmeteminsaglik.enums.*;
 import org.ahmeteminsaglik.business.factory.ConseptFactory;
 
-public class TestAlgorithmResult implements SetResultConseptService, GetResultConseptService {
+public class TestAlgorithmResult implements SetTestResultService, GetTestResultService {
     private ResultEntity result = new ResultEntity();
     private ConseptFactory factory = new ConseptFactory();
     private WordProcessConsept wordProcessConsept = result.getWordProcessConsept();

@@ -5,6 +5,14 @@ public class WordProcessConsept {
     private WordProcessStatistics statistics;
     private WordProcessUsedTable usedTable;
 
+    public WordProcessConsept() {
+    }
+
+    public WordProcessConsept(WordProcessUsedTable usedTable,WordProcessStatistics statistics ) {
+        this.usedTable = usedTable;
+        this.statistics = statistics;
+    }
+
     public WordProcessStatistics getStatistics() {
         return statistics;
     }

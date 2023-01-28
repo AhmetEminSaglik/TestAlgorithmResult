@@ -10,10 +10,10 @@ org\ahmeteminsaglik\entity\ResultEntity.class
 org\ahmeteminsaglik\abstracts\set\algorithm\SetUsedAlgorithmService.class
 org\ahmeteminsaglik\abstracts\get\wordprocess\GetWordProcessConseptService.class
 org\ahmeteminsaglik\abstracts\set\wordprocess\SetWordProcessUsedTableService.class
-org\ahmeteminsaglik\abstracts\get\api\GetResultConseptService.class
 org\ahmeteminsaglik\TestAlgorithmResult.class
 org\ahmeteminsaglik\abstracts\get\algorithm\GetUsedAlgorithmService.class
 org\ahmeteminsaglik\abstracts\get\wordprocess\GetWordProcessStatisticService.class
-org\ahmeteminsaglik\abstracts\set\api\SetResultConseptService.class
+org\ahmeteminsaglik\abstracts\set\api\SetTestResultService.class
 org\ahmeteminsaglik\abstracts\set\complexity\SetAllComplexityService.class
+org\ahmeteminsaglik\abstracts\get\api\GetTestResultService.class
 org\ahmeteminsaglik\entity\WordProcessConsept.class
