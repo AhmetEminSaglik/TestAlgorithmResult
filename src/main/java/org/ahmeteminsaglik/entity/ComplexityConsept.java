@@ -33,4 +33,13 @@ public class ComplexityConsept {
     public void setEnumProcessName(EnumProcessName enumProcessName) {
         this.enumProcessName = enumProcessName;
     }
+
+    @Override
+    public String toString() {
+        return "ComplexityConsept{" +
+                "\nenumProcessName=" + enumProcessName +
+                ",\nstopwatch=" + stopwatch +
+                ",\nmemoryUsage=" + memoryUsage +
+                '}';
+    }
 }
